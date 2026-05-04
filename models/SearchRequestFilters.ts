@@ -17,15 +17,15 @@ import { HttpFile } from '../http/http';
 */
 export class SearchRequestFilters {
     /**
-    * Filter results to a specific region using an ISO-3166-1 Alpha-2 country code. See https://help.kagi.com/api/regions for supported codes.
+    * Filter results to a specific region using an ISO 3166-1 Alpha-2 country code. See https://help.kagi.com/api/regions for supported codes.
     */
     'region'?: string;
     /**
-    * Filter for results published/updated after this date. Must be in ISO 8601 format (YYYY-MM-DD).
+    * Filter for results published or updated after this date.
     */
     'after'?: string;
     /**
-    * Filter for results published/updated before this date. Must be in ISO 8601 format (YYYY-MM-DD).
+    * Filter for results published or updated before this date.
     */
     'before'?: string;
 
@@ -44,13 +44,13 @@ export class SearchRequestFilters {
             "name": "after",
             "baseName": "after",
             "type": "string",
-            "format": ""
+            "format": "date"
         },
         {
             "name": "before",
             "baseName": "before",
             "type": "string",
-            "format": ""
+            "format": "date"
         }    ];
 
     static getAttributeTypeMap() {

@@ -239,8 +239,8 @@ export class ObservableSearchApi {
     }
 
     /**
-     * Perform a search of the web.
-     * @param searchRequest Contains the search query to run
+     * Perform a web search
+     * @param searchRequest
      */
     public searchWithHttpInfo(searchRequest: SearchRequest, _options?: ConfigurationOptions): Observable<HttpInfo<Search200Response>> {
         const _config = mergeConfiguration(this.configuration, _options);
@@ -263,8 +263,8 @@ export class ObservableSearchApi {
     }
 
     /**
-     * Perform a search of the web.
-     * @param searchRequest Contains the search query to run
+     * Perform a web search
+     * @param searchRequest
      */
     public search(searchRequest: SearchRequest, _options?: ConfigurationOptions): Observable<Search200Response> {
         return this.searchWithHttpInfo(searchRequest, _options).pipe(map((apiResponse: HttpInfo<Search200Response>) => apiResponse.data));

@@ -4,7 +4,7 @@ All URIs are relative to *https://kagi.com/api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**search**](SearchApi.md#search) | **POST** /search | Perform a search of the web.
+[**search**](SearchApi.md#search) | **POST** /search | Perform a web search
 
 
 # **search**
@@ -22,7 +22,7 @@ const configuration = createConfiguration();
 const apiInstance = new SearchApi(configuration);
 
 const request: SearchApiSearchRequest = {
-    // Contains the search query to run
+  
   searchRequest: {
     query: "query_example",
     workflow: "search",
@@ -41,8 +41,8 @@ const request: SearchApiSearchRequest = {
         "keywordsExcluded_example",
       ],
       fileType: "fileType_example",
-      timeAfter: "timeAfter_example",
-      timeBefore: "timeBefore_example",
+      timeAfter: new Date('1970-01-01').toISOString().split('T')[0];,
+      timeBefore: new Date('1970-01-01').toISOString().split('T')[0];,
       timeRelative: "day",
       searchRegion: "searchRegion_example",
     },
@@ -51,8 +51,8 @@ const request: SearchApiSearchRequest = {
     limit: 1,
     filters: {
       region: "region_example",
-      after: "after_example",
-      before: "before_example",
+      after: new Date('1970-01-01').toISOString().split('T')[0];,
+      before: new Date('1970-01-01').toISOString().split('T')[0];,
     },
     extract: {
       count: 1,
@@ -84,7 +84,7 @@ console.log('API called successfully. Returned data:', data);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **searchRequest** | **SearchRequest**| Contains the search query to run |
+ **searchRequest** | **SearchRequest**|  |
 
 
 ### Return type

@@ -22,7 +22,7 @@ export class SearchResult {
     */
     'url': string;
     /**
-    * This is the title of the resource. For HTML resources, it is the title in the header of the document. For Video resources, it is the name of the video that would be displayed on the video site
+    * This is the title of the resource. For HTML documents, it reflects `<title>`. For videos, it is the name that would be displayed on the video site.
     */
     'title': string;
     /**
@@ -30,7 +30,7 @@ export class SearchResult {
     */
     'snippet'?: string;
     /**
-    * A date for when the resource was last updated or created.
+    * The date when the resource was created or last updated.
     */
     'time'?: string;
     'image'?: SearchResultImage;

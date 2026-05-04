@@ -14,11 +14,11 @@ import { SearchResult } from '../models/SearchResult';
 import { HttpFile } from '../http/http';
 
 /**
-* Holds all the search results for the query specified. As results have different types and sources, they are spearated into different fields within this object. For example image results are stored under `data.image` while news results are stored under `data.news`. All results will have the same main structure, but additional data might be stored under the `data.{name}[].props` path. Please look at each different type of result for more information about this.
+* Holds all the search results for the query specified. As results have different types and sources, they are separated into different fields within this object. For example image results are stored under `data.image` while news results are stored under `data.news`. All results will have the same main structure, but additional data might be stored under the `data.{name}[].props` path. Please look at each different type of result for more information about this.
 */
 export class Search200ResponseData {
     /**
-    * Contains all search results for html pages or wedbsites.
+    * Contains all search results for html pages or websites.
     */
     'search'?: Array<SearchResult>;
     /**
@@ -34,7 +34,7 @@ export class Search200ResponseData {
     */
     'podcast'?: Array<SearchResult>;
     /**
-    * Contains all search results for creators of podcasta.
+    * Contains all search results for creators of podcasts.
     */
     'podcastCreator'?: Array<SearchResult>;
     /**
@@ -50,11 +50,11 @@ export class Search200ResponseData {
     */
     'directAnswer'?: Array<SearchResult>;
     /**
-    * Contains news results from publishers collected and stored in Kagis\' news index.
+    * Contains news results from publishers collected and stored in Kagi\'s news index.
     */
     'interestingNews'?: Array<SearchResult>;
     /**
-    * Contains small web results from publishers collected and stored in Kagis\' small web index.
+    * Contains small web results from publishers collected and stored in Kagi\'s small web index.
     */
     'interestingFinds'?: Array<SearchResult>;
     /**
@@ -70,7 +70,7 @@ export class Search200ResponseData {
     */
     'packageTracking'?: Array<SearchResult>;
     /**
-    * Contains all search results for public records, such as government documents, or public court records.
+    * Contains all search results for public records, such as government documents or public court records.
     */
     'publicRecords'?: Array<SearchResult>;
     /**

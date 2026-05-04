@@ -202,8 +202,8 @@ export class PromiseSearchApi {
     }
 
     /**
-     * Perform a search of the web.
-     * @param searchRequest Contains the search query to run
+     * Perform a web search
+     * @param searchRequest
      */
     public searchWithHttpInfo(searchRequest: SearchRequest, _options?: PromiseConfigurationOptions): Promise<HttpInfo<Search200Response>> {
         const observableOptions = wrapOptions(_options);
@@ -212,8 +212,8 @@ export class PromiseSearchApi {
     }
 
     /**
-     * Perform a search of the web.
-     * @param searchRequest Contains the search query to run
+     * Perform a web search
+     * @param searchRequest
      */
     public search(searchRequest: SearchRequest, _options?: PromiseConfigurationOptions): Promise<Search200Response> {
         const observableOptions = wrapOptions(_options);

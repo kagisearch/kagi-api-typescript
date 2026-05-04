@@ -20,8 +20,8 @@ import { SearchRequest } from '../models/SearchRequest';
 export class SearchApiRequestFactory extends BaseAPIRequestFactory {
 
     /**
-     * Perform a search of the web.
-     * @param searchRequest Contains the search query to run
+     * Perform a web search
+     * @param searchRequest 
      */
     public async search(searchRequest: SearchRequest, _options?: Configuration): Promise<RequestContext> {
         let _config = _options || this.configuration;

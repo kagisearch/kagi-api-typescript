@@ -21,15 +21,15 @@ import { HttpFile } from '../http/http';
 */
 export class SearchRequest {
     /**
-    * The search query to perform.
+    * Search query to run.
     */
     'query': string;
     /**
-    * Can be used to filter result output to a single category.
+    * Type of results to return.
     */
     'workflow'?: SearchRequestWorkflowEnum;
     /**
-    * A lens ID, as shown on https://kagi.com/settings/lenses when a lens is set to be shareable. Can be just the ID portion of the URL (`https://kagi.com/lenses/ID`), or the full URL.
+    * Lens to apply to the search. Can be a built-in lens\'s identifier or a lens ID as shown on https://kagi.com/settings/lenses when a lens is set to be shareable. Can be just the ID portion of the URL (`https://kagi.com/lenses/ID`) or the full URL.
     */
     'lensId'?: string;
     'lens'?: SearchRequestLens;

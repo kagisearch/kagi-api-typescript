@@ -193,7 +193,7 @@ import { SearchApiRequestFactory, SearchApiResponseProcessor} from "../apis/Sear
 
 export interface SearchApiSearchRequest {
     /**
-     * Contains the search query to run
+     * 
      * @type SearchRequest
      * @memberof SearchApisearch
      */
@@ -208,7 +208,7 @@ export class ObjectSearchApi {
     }
 
     /**
-     * Perform a search of the web.
+     * Perform a web search
      * @param param the request object
      */
     public searchWithHttpInfo(param: SearchApiSearchRequest, options?: ConfigurationOptions): Promise<HttpInfo<Search200Response>> {
@@ -216,7 +216,7 @@ export class ObjectSearchApi {
     }
 
     /**
-     * Perform a search of the web.
+     * Perform a web search
      * @param param the request object
      */
     public search(param: SearchApiSearchRequest, options?: ConfigurationOptions): Promise<Search200Response> {
