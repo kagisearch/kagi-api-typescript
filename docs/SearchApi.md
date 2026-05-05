@@ -26,6 +26,7 @@ const request: SearchApiSearchRequest = {
   searchRequest: {
     query: "query_example",
     workflow: "search",
+    format: "json",
     lensId: "lensId_example",
     lens: {
       sitesIncluded: [
@@ -98,7 +99,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/markdown
 
 
 ### HTTP response details

@@ -29,6 +29,10 @@ export class SearchRequest {
     */
     'workflow'?: SearchRequestWorkflowEnum;
     /**
+    * Format to serialize the API response as.
+    */
+    'format'?: SearchRequestFormatEnum;
+    /**
     * Lens to apply to the search. Can be a built-in lens\'s identifier or a lens ID as shown on https://kagi.com/settings/lenses when a lens is set to be shareable. Can be just the ID portion of the URL (`https://kagi.com/lenses/ID`) or the full URL.
     */
     'lensId'?: string;
@@ -64,6 +68,12 @@ export class SearchRequest {
             "name": "workflow",
             "baseName": "workflow",
             "type": "SearchRequestWorkflowEnum",
+            "format": ""
+        },
+        {
+            "name": "format",
+            "baseName": "format",
+            "type": "SearchRequestFormatEnum",
             "format": ""
         },
         {
@@ -129,5 +139,9 @@ export enum SearchRequestWorkflowEnum {
     Videos = 'videos',
     News = 'news',
     Podcasts = 'podcasts'
+}
+export enum SearchRequestFormatEnum {
+    Json = 'json',
+    Markdown = 'markdown'
 }
 

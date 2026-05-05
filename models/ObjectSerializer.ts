@@ -77,7 +77,7 @@ import { Search200ResponseData } from '../models/Search200ResponseData';
 import { SearchObject } from '../models/SearchObject';
 import { SearchObjectImage } from '../models/SearchObjectImage';
 import { SearchObjectThumbnail } from '../models/SearchObjectThumbnail';
-import { SearchRequest , SearchRequestWorkflowEnum           } from '../models/SearchRequest';
+import { SearchRequest , SearchRequestWorkflowEnum  , SearchRequestFormatEnum           } from '../models/SearchRequest';
 import { SearchRequestExtract } from '../models/SearchRequestExtract';
 import { SearchRequestFilters } from '../models/SearchRequestFilters';
 import { SearchRequestLens       , SearchRequestLensTimeRelativeEnum    } from '../models/SearchRequestLens';
@@ -139,6 +139,7 @@ let primitives = [
 let enumsMap: Set<string> = new Set<string>([
     "ExtractRequestFormatEnum",
     "SearchRequestWorkflowEnum",
+    "SearchRequestFormatEnum",
     "SearchRequestLensTimeRelativeEnum",
     "TranslateDictionary200ResponseDefinitionTemporalTrendEnum",
     "TranslateDictionary200ResponseDefinitionGenderEnum",
