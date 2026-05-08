@@ -5,7 +5,7 @@
   "author": "OpenAPI-Generator Contributors",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kagisearch/kagi-api-typescript.git"
+    "url": "https://github.com/kagisearch/kagi-openapi-typescript.git"
   },
   "keywords": [
     "fetch",
