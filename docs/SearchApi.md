@@ -59,6 +59,7 @@ const request: SearchApiSearchRequest = {
       count: 1,
       timeout: 0.5,
     },
+    safeSearch: true,
     personalizations: {
       domains: [
         {

@@ -29,7 +29,7 @@ export class SearchRequest {
     */
     'workflow'?: SearchRequestWorkflowEnum;
     /**
-    * Format to serialize the API response as.
+    * **(EXPERIMENTAL)** Format to serialize the API response as. The exact contents and structure of markdown output is still being worked on - please send your feedback!
     */
     'format'?: SearchRequestFormatEnum;
     /**
@@ -51,6 +51,10 @@ export class SearchRequest {
     'limit'?: number;
     'filters'?: SearchRequestFilters;
     'extract'?: SearchRequestExtract;
+    /**
+    * Whether safe search is enabled, omitting potentially NSFW content.
+    */
+    'safeSearch'?: boolean;
     'personalizations'?: SearchRequestPersonalizations;
 
     static readonly discriminator: string | undefined = undefined;
@@ -116,6 +120,12 @@ export class SearchRequest {
             "name": "extract",
             "baseName": "extract",
             "type": "SearchRequestExtract",
+            "format": ""
+        },
+        {
+            "name": "safeSearch",
+            "baseName": "safe_search",
+            "type": "boolean",
             "format": ""
         },
         {

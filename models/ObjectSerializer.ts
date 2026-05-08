@@ -26,7 +26,7 @@ import { PageInput } from '../models/PageInput';
 import { PageOutput } from '../models/PageOutput';
 import { Search200Response } from '../models/Search200Response';
 import { Search200ResponseData } from '../models/Search200ResponseData';
-import { SearchRequest , SearchRequestWorkflowEnum  , SearchRequestFormatEnum           } from '../models/SearchRequest';
+import { SearchRequest , SearchRequestWorkflowEnum  , SearchRequestFormatEnum            } from '../models/SearchRequest';
 import { SearchRequestExtract } from '../models/SearchRequestExtract';
 import { SearchRequestFilters } from '../models/SearchRequestFilters';
 import { SearchRequestLens       , SearchRequestLensTimeRelativeEnum    } from '../models/SearchRequestLens';

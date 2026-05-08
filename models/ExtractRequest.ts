@@ -26,7 +26,7 @@ export class ExtractRequest {
     */
     'timeout'?: number;
     /**
-    * Response format
+    * **(EXPERIMENTAL)** Format to serialize the API response as. The exact contents and structure of markdown output is still being worked on - please send your feedback!
     */
     'format'?: ExtractRequestFormatEnum;
 
