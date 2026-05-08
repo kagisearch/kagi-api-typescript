@@ -31,7 +31,7 @@ import { SearchRequestExtract } from '../models/SearchRequestExtract';
 import { SearchRequestFilters } from '../models/SearchRequestFilters';
 import { SearchRequestLens       , SearchRequestLensTimeRelativeEnum    } from '../models/SearchRequestLens';
 import { SearchRequestPersonalizations } from '../models/SearchRequestPersonalizations';
-import { SearchRequestPersonalizationsDomainsInner } from '../models/SearchRequestPersonalizationsDomainsInner';
+import { SearchRequestPersonalizationsDomainsInner , SearchRequestPersonalizationsDomainsInnerKindEnum   } from '../models/SearchRequestPersonalizationsDomainsInner';
 import { SearchRequestPersonalizationsRegexesInner } from '../models/SearchRequestPersonalizationsRegexesInner';
 import { SearchResult } from '../models/SearchResult';
 import { SearchResultImage } from '../models/SearchResultImage';
@@ -53,6 +53,7 @@ let enumsMap: Set<string> = new Set<string>([
     "SearchRequestWorkflowEnum",
     "SearchRequestFormatEnum",
     "SearchRequestLensTimeRelativeEnum",
+    "SearchRequestPersonalizationsDomainsInnerKindEnum",
 ]);
 
 let typeMap: {[index: string]: any} = {

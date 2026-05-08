@@ -64,13 +64,13 @@ const request: SearchApiSearchRequest = {
       domains: [
         {
           domain: "domain_example",
-          bias: 3.14,
+          kind: "block",
         },
       ],
       regexes: [
         {
-          regex: "regex_example",
-          replacement: "replacement_example",
+          regex: "^https?://(www\.)?reddit\.com.*",
+          replacement: "https://old.reddit.com",
         },
       ],
     },
